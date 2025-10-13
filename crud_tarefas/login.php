@@ -1,0 +1,69 @@
+<?php
+    session_start();
+
+    $erros = isset($_SESSION['erros_login']) ? 
+    $_SESSION['erros_login'] : [];
+    $email = isset($_SESSION['email_login']) ? 
+    $_SESSION['email_login'] : '';
+
+    unset($_SESSION['erros_login']);
+    unset($_SESSION['email_login']);
+
+    if (isset($_COOKIE['user_login']) && empty($email)) {
+        $email = $_COOKIE['user_login'];
+    }
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Tela de Login</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+    <body>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <h3 class="text-center mt-2">Tela de Login</h3>
+
+                <?php if (!empty($erros)): ?>
+                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                        <ul class="mb-0">
+                            <?php foreach ($erros as $erro): ?>
+                                <li><?php echo htmlspecialchars($erro); ?></li>
+                            <?php endforeach; ?>
+                        </ul>                        
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                <?php endif; ?>
+
+                <form action="processar_login.php" method="POST">
+                    <div class="card mb-3 mt-3">
+                        <div class="form-group m-2">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" name="email" value="<?php echo htmlspecialchars($email); ?>" placeholder="Digite o seu email">
+                        </div>
+                        <div class="form-group m-2">
+                            <label for="senha">Senha</label>
+                            <input type="text" class="form-control" id="senha" name="senha" placeholder="Digite sua senha">
+                        </div>
+                    </div>
+                    <div class="form-row m-2">
+                        <div class="col">
+                            <button type="submit" class="btn btn-primary w-100">Entrar</button>
+                        </div>
+                        <div class="col">
+                            <a href="cadastro.php" class="btn btn-outline-secondary w-100 text-center d-block">Não está cadastrado? Cadastre-se</a>
+                        </div>
+                    </div>
+                </form>    
+            </div>
+        </div>
+    </body>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</html>
