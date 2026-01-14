@@ -2,7 +2,7 @@
 
 Bem-vindo ao repositório de crud de tarefas! Este projeto foi desenvolvido como atividade prática da matéria Aplicações para WEB 2 no curso técnico de informática do CEFET-MG.
 
-## Requisitos:
+## ✔ Requisitos:
 - XAMPP instalado
 - MySQL instalado
 
