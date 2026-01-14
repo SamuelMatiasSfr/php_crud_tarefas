@@ -16,7 +16,7 @@ Siga as etapas abaixo:
       
 2. Configuração do Projeto
     - Abra o XAMPP e inicie o Apache e o MySQL
-    - Abra o SGBD de sua preferência (SQL Server, phpmyadmin) e rode o script do arquivo: script_banco.txt
-    - Abra o navegador e digite no campo de pesquisa http://localhost/WEB/crud_produtos/tela_tarefas.php
+    - Abra o SGBD de sua preferência (SQL Server, phMyAdmin) e rode o script do arquivo: script_banco.txt
+    - Abra o navegador e digite no campo de pesquisa http://localhost/crud_tarefas/tela_tarefas.php
 
 3. Teste o projeto
