@@ -6,7 +6,7 @@ Bem-vindo ao repositório de crud de tarefas! Este projeto foi desenvolvido como
 - XAMPP instalado
 - MySQL instalado
 
-## ⚙️Configuração⚙️
+## ⚙️ Configuração
 
 Siga as etapas abaixo:
 
