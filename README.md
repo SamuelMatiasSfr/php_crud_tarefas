@@ -1,22 +1,24 @@
-# Crud Tarefas
+# Sistema de Gerenciamento de Tarefas
 
-Bem-vindo ao repositório de crud de tarefas! Este projeto foi desenvolvido como atividade prática da matéria Aplicações para WEB 2 no curso técnico de informática do CEFET-MG.
+Projeto em PHP para gerenciar tarefas, permitindo cadastro, edição e exclusão de registros. Este projeto foi desenvolvido como atividade prática da matéria Aplicações para WEB 2 no curso técnico de informática do CEFET-MG.
 
-## ✔ Requisitos:
-- XAMPP instalado
-- MySQL instalado
+## Funcionalidades:
+- Cadastrar usuário
+- Logar usuário
+- Cadastrar tarefas
+- Editar tarefas
+- Excluir tarefas
+- Listar tarefas em uma tabela 
 
-## ⚙️ Configuração
+## Tecnologias:
+- PHP
+- MySQL
+- VS Code
 
-Siga as etapas abaixo:
+## Como executar
+1. Baixe e extraia o arquivo zip do projeto
+2. Copie a pasta principal do projeto (pasta **crud_tarefas**) para a pasta **C:\xampp\htdocs**
+3. Abra o SGBD de sua preferência e rode o script do arquivo: **script_banco.txt**
+4. Abra o navegador e digite no campo de pesquisa **localhost/crud_tarefas/login.php**
+5. Teste o projeto
 
-1. Clone ou Baixe o Repositório
-    - Baixe e extraia o arquivo zip
-    - Copie o projeto principal (pasta crud_tarefas) para a pasta C:\xampp\htdocs no Disco Local
-      
-2. Configuração do Projeto
-    - Abra o XAMPP e inicie o Apache e o MySQL
-    - Abra o SGBD de sua preferência (SQL Server, phMyAdmin) e rode o script do arquivo: script_banco.txt
-    - Abra o navegador e digite no campo de pesquisa http://localhost/crud_tarefas/tela_tarefas.php
-
-3. Teste o projeto
