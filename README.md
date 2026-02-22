@@ -2,7 +2,7 @@
 
 Sistema em PHP para gerenciar tarefas, permitindo cadastro, edição e exclusão de registros. Este projeto foi desenvolvido como atividade prática de Aplicações para WEB 2 no curso técnico de informática do CEFET-MG.
 
-## Funcionalidades:
+## Funcionalidades
 - Cadastrar usuário
 - Logar usuário
 - Cadastrar tarefas
@@ -10,7 +10,7 @@ Sistema em PHP para gerenciar tarefas, permitindo cadastro, edição e exclusão
 - Excluir tarefas
 - Listar tarefas em uma tabela 
 
-## Tecnologias:
+## Tecnologias usadas
 - PHP
 - MySQL
 - VS Code
