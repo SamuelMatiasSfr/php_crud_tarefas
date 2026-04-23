@@ -19,6 +19,7 @@ Sistema em PHP para gerenciar tarefas, permitindo cadastro, edição e exclusão
 
 ## Tecnologias usadas
 - PHP
+- SQL
 - MySQL
 - Bootstrap
 - VS Code
