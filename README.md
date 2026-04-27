@@ -59,6 +59,8 @@ Este projeto foi desenvolvido para fins acadêmicos e não está mais em manuten
 
 ## Telas do Sistema
 
+A seguir, estão algumas telas do sistema que ilustram sua interface e funcionamento.
+
 ### Tela de Cadastro de Usuário
 <img width="550" height="281" alt="image" src="https://github.com/user-attachments/assets/6c1518d0-8da3-454e-88f9-916070d68506" />
 
